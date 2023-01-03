@@ -3,13 +3,21 @@ package com.example.getmesocialservice.model;
 public class User {
 
     private String name, address, profilePicUrl;
-    private int age;
+    private int age, userId;
 
     public User(String name, String address, String profilePicUrl, int age) {
         this.name = name;
         this.address = address;
         this.profilePicUrl = profilePicUrl;
         this.age = age;
+    }
+
+    public int getUserId() {
+        return userId;
+    }
+
+    public void setUserId(int userId) {
+        this.userId = userId;
     }
 
     public String getName() {
